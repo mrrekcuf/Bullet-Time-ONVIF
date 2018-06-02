@@ -1,0 +1,23 @@
+﻿<Window x:Class="BulletTimeOnvifVideo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BulletTimeOnvifVideo"
+		xmlns:vlc="clr-namespace:Vlc.DotNet.Wpf;assembly=Vlc.DotNet.Wpf" 
+		mc:Ignorable="d"
+        Title="Bullet Time ONVIF" Height="671.376" Width="1822.95">
+    <Grid x:Name="GridMain" Margin="0,0,2,0">
+
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="189" Margin="18,56,0,0" VerticalAlignment="Top" Width="100" />
+        <TextBox x:Name="address" HorizontalAlignment="Left" Height="27" Margin="134,10,0,0" TextWrapping="Wrap" Text="camera's ip address" VerticalAlignment="Top" Width="179" Foreground="DarkGray" RenderTransformOrigin="0.307,0.593"/>
+        <TextBox x:Name="user" HorizontalAlignment="Left" Height="27" Margin="318,10,0,0" TextWrapping="Wrap" Text="user id" VerticalAlignment="Top" Width="150" Foreground="DarkGray"/>
+        <PasswordBox x:Name="password" HorizontalAlignment="Left" Height="27" Margin="473,10,0,0" VerticalAlignment="Top" Width="150" Foreground="DarkGray" Password="password"/>
+        <Button x:Name="button" Content="Connect..." HorizontalAlignment="Left" Margin="18,10,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.405,-0.212" Height="30"  />
+        <Button x:Name="buttonAdd" Content="Add Camera" HorizontalAlignment="Left" Margin="18,267,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.405,-0.212" Height="27" IsEnabled="False" />
+        <Button x:Name="buttonAction" Content="Action !!!" HorizontalAlignment="Left" Margin="18,411,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.405,-0.212" Height="30" IsEnabled="False"  />
+        <Button x:Name="buttonSave" Content="Save Setting" HorizontalAlignment="Left" Margin="18,308,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.405,-0.212" Height="27" />
+        <Button x:Name="buttonLoad" Content="Load Setting" HorizontalAlignment="Left" Margin="18,340,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.405,-0.212" Height="27" />
+
+    </Grid>
+</Window>
